@@ -4,12 +4,12 @@ local opt = vim.opt
 
 -- show whitespaces
 opt.list = true
-opt.listchars:append {
-	tab = ">·",
-	trail = "~",
-	eol = '¬',
+opt.listchars:append({
+    tab = ">·",
+    trail = "~",
+    eol = "¬",
     space = "·",
-}
+})
 
 opt.expandtab = true
 opt.smartindent = true
@@ -47,3 +47,10 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- folding
+-- opt.foldenable = fasle
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldmethod = "expr"
+opt.foldlevel = 99
+opt.foldlevelstart = 4

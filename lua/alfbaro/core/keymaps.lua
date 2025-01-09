@@ -15,3 +15,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 keymap.set("n", "<leader>tg", "<cmd>BufferLinePick<CR>", { desc = "Go to tab" }) -- move to tab
+
+-- keymaps folding
+keymap.set("n", "+", "<cmd>foldclose<CR>", { desc = "Close code fold" })
+keymap.set("n", "-", "<cmd>foldopen<CR>", { desc = "Open code fold" })

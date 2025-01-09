@@ -35,6 +35,7 @@ Make sure the following tools are installed on your system:
    ```bash
    brew install neovim
    ```
+
 2. **Clone the Repository**:
 
    ```bash
@@ -61,13 +62,19 @@ Make sure the following tools are installed on your system:
 
 6. **(Aditional step for iOS Development)**
 
-   Download the lastest from [codelldb](https://github.com/vadimcn/codelldb/releases)
-   Unzip the content (change the file format from vsix to zip)
-   And move it to the Developer folder
+	6.1 **Install TSTreeSitter**
+	
+	If you are going to use swift, you need to install the TreeSitter plugin, on command mode excute `:TSInstall swift`
 
-   ```bash
-   mv extension ~/Developer/
-   ```
+	6.2 **Install DAP for debugging**
+	
+	Download the lastest from [codelldb](https://github.com/vadimcn/codelldb/releases)
+	Unzip the content (change the file format from vsix to zip)
+	And move it to the Developer folder
+	
+	```bash
+	mv extension ~/Developer/
+	```
 
 7. **Final step**
 
