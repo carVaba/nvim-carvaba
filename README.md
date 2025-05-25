@@ -62,21 +62,31 @@ Make sure the following tools are installed on your system:
 
 6. **(Aditional step for iOS Development)**
 
-	6.1 **Install TSTreeSitter**
-	
-	If you are going to use swift, you need to install the TreeSitter plugin, on command mode excute `:TSInstall swift`
+   6.1 **Install TSTreeSitter**
 
-	6.2 **Install DAP for debugging**
-	
-	Download the lastest from [codelldb](https://github.com/vadimcn/codelldb/releases)
-	Unzip the content (change the file format from vsix to zip)
-	And move it to the Developer folder
-	
-	```bash
-	mv extension ~/Developer/
-	```
+   If you are going to use swift, you need to install the TreeSitter plugin, on command mode excute `:TSInstall swift`
 
-7. **Final step**
+   6.2 **Install DAP for debugging**
+
+   Download the lastest from [codelldb](https://github.com/vadimcn/codelldb/releases)
+   Unzip the content (change the file format from vsix to zip)
+   And move it to the Developer folder
+
+   ```bash
+   mv extension ~/Developer/
+   ```
+
+7. **Markdown Installation**
+
+   Please before start working on the markdown file check the build is installed
+
+   ```sh
+   :Lazy build markdown-preview.nvim
+   ```
+
+   For more information check [here](https://github.com/iamcco/markdown-preview.nvim/issues/690#issuecomment-2283748484)
+
+8. **Final step**
 
    Start nvim and let's have fun 🎉
 
